@@ -46,14 +46,55 @@ body { font-family: "futura-pt", "Futura", sans-serif; background: #fff; color: 
   text-decoration: none;
 }
 .nav .links a {
-  margin-left: 18px; 
-  text-decoration: none; 
+  margin-left: 18px;
+  text-decoration: none;
   color: #fff;
   font-family: "futura-pt", "Futura", sans-serif;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  margin: 3px 0;
+  transition: 0.3s;
+}
+
+@media (max-width: 700px) {
+  .hamburger {
+    display: flex;
+  }
+  .links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #000;
+    flex-direction: column;
+    padding: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+  }
+  .links.open {
+    display: flex;
+  }
+  .links.open a {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
 }
 
 /* HERO */
