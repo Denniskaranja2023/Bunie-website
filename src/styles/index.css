@@ -261,15 +261,12 @@ body {
   gap: 50px;
 }
 
-.card img {
-  width: 100%; 
-  height: 250px; 
-  object-fit: cover; 
+.card {
   cursor: zoom-in;
   transition: transform .3s ease;
 }
 
-.card img:hover { 
+.card:hover { 
   transform: scale(1.05); 
 }
 
@@ -503,6 +500,81 @@ footer p {
 .submit-btn:hover {
   background: var(--accent);
   color: white;
+}
+
+/* LAZY IMAGE LOADING */
+.lazy-image-container {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.mini-camera {
+  width: 40px;
+  height: 30px;
+  background: #333;
+  border-radius: 4px;
+  position: relative;
+  animation: miniShake 1.5s infinite;
+}
+
+.mini-lens {
+  width: 20px;
+  height: 20px;
+  background: #F15A24;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  animation: miniRotate 1s linear infinite;
+}
+
+.lazy-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.lazy-image-container img.loading {
+  opacity: 0;
+}
+
+.lazy-image-container img.loaded {
+  opacity: 1;
+}
+
+.image-error {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #666;
+  font-size: 14px;
+  text-align: center;
+}
+
+@keyframes miniShake {
+  0%, 90%, 100% { transform: translateX(0); }
+  95% { transform: translateX(-1px); }
+  97% { transform: translateX(1px); }
+}
+
+@keyframes miniRotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 /* LOADING SPINNER */

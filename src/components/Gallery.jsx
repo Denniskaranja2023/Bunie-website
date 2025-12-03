@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Lightbox from './Lightbox.jsx';
+import LazyImage from './LazyImage.jsx';
 
 const Gallery = ({ title, images, galleryId }) => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
@@ -31,7 +32,7 @@ const Gallery = ({ title, images, galleryId }) => {
         <div className="grid">
           {images.map((image, index) => (
             <figure key={index} className="card">
-              <img 
+              <LazyImage 
                 src={image.src} 
                 alt={image.alt} 
                 onClick={() => openLightbox(index)}
