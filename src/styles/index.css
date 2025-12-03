@@ -126,9 +126,15 @@ body {
   .links.open {
     display: flex;
   }
-  .links.open a {
+  .links a {
     margin-left: 0;
     margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 701px) {
+  .links {
+    display: flex !important;
   }
 }
 
