@@ -10,7 +10,7 @@ const LoadingSpinner = () => {
           </div>
           <div className="camera-flash"></div>
         </div>
-        <div className="loading-text">Capturing memories...</div>
+        <div className="loading-text">Great memories are worth keeping</div>
       </div>
     </div>
   );
