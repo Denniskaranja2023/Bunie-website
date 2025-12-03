@@ -17,9 +17,7 @@ const LazyImage = ({ src, alt, className, onClick }) => {
     <div className="lazy-image-container">
       {!isLoaded && !hasError && (
         <div className="image-spinner">
-          <div className="mini-camera">
-            <div className="mini-lens"></div>
-          </div>
+          <div className="spinner-ring"></div>
         </div>
       )}
       <img

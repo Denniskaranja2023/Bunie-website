@@ -103,7 +103,7 @@ body {
 .hamburger span {
   width: 25px;
   height: 3px;
-  background: #fff;
+  background: #F15A24;
   margin: 3px 0;
   transition: 0.3s;
 }
@@ -521,24 +521,13 @@ footer p {
   z-index: 2;
 }
 
-.mini-camera {
+.spinner-ring {
   width: 40px;
-  height: 30px;
-  background: #333;
-  border-radius: 4px;
-  position: relative;
-  animation: miniShake 1.5s infinite;
-}
-
-.mini-lens {
-  width: 20px;
-  height: 20px;
-  background: #F15A24;
+  height: 40px;
+  border: 4px solid rgba(241, 90, 36, 0.2);
+  border-top: 4px solid #F15A24;
   border-radius: 50%;
-  position: absolute;
-  top: 5px;
-  left: 10px;
-  animation: miniRotate 1s linear infinite;
+  animation: spin 1s linear infinite;
 }
 
 .lazy-image-container img {
@@ -566,13 +555,7 @@ footer p {
   text-align: center;
 }
 
-@keyframes miniShake {
-  0%, 90%, 100% { transform: translateX(0); }
-  95% { transform: translateX(-1px); }
-  97% { transform: translateX(1px); }
-}
-
-@keyframes miniRotate {
+@keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
