@@ -189,6 +189,12 @@ body {
   font-family: "futura-pt", "Futura", sans-serif; 
 }
 
+@media (max-width: 768px) {
+  .about {
+    margin: 0 auto;
+  }
+}
+
 .about__container { 
   display: grid; 
   grid-template-columns: 1fr 1fr; 
