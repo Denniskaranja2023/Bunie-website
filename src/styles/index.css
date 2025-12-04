@@ -152,6 +152,14 @@ body {
   background-repeat: no-repeat;
 }
 
+@media (max-width: 768px) {
+  .hero#home {
+    height: 50vh;
+    background-size: contain;
+    background-color: #000;
+  }
+}
+
 .hero__overlay {
   position: absolute; 
   inset: 0;
@@ -259,6 +267,13 @@ body {
   display: grid; 
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 50px;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
 }
 
 .card {
@@ -511,6 +526,12 @@ footer p {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .lazy-image-container {
+    height: 180px;
+  }
 }
 
 .image-spinner {
