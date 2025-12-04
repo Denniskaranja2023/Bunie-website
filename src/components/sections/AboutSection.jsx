@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { heroImages } from '../../data/galleryData.jsx';
 
 const AboutSection = () => {
@@ -17,6 +18,7 @@ const AboutSection = () => {
             serves as a bridge between the present and the future. Our approach combines 
             technical expertise with artistic vision to deliver images that you'll treasure forever.
           </p>
+          <Link to="/contact" className="contact-btn">Contact us</Link>
         </div>
         <div className="about__image">
           <img src={heroImages.about} alt="About Bunie Creatives" />
