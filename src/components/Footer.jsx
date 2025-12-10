@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -13,6 +16,22 @@ const Footer = () => {
       <button className="back-to-top" onClick={scrollToTop} title="Back to Top">
         ↑
       </button>
+      
+      <div className="footer-links">
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+        <Link to="/contact">Contact</Link>
+        <div className="footer-dropdown" onMouseEnter={() => setIsServicesOpen(true)} onMouseLeave={() => setIsServicesOpen(false)}>
+          <span>Services</span>
+          <div className={`footer-dropdown-menu ${isServicesOpen ? 'show' : ''}`}>
+            <Link to="/weddings">Weddings</Link>
+            <Link to="/corporate">Corporate events</Link>
+            <Link to="/portraits">Professional headshots</Link>
+            <Link to="/music-production">Music production</Link>
+          </div>
+        </div>
+      </div>
+      
       <p>&copy; 2025 Bunie Creatives. Great memories are worth keeping.</p>
       <div className="social-icons">
         <a href="mailto:buniecompany@gmail.com" title="Email">

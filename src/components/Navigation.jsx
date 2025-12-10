@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Navigation = ({ embedded = false }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -11,6 +12,7 @@ const Navigation = ({ embedded = false }) => {
 
   const closeMenu = () => {
     setIsMenuOpen(false);
+    setIsServicesOpen(false);
   };
 
   const scrollToSection = (sectionId) => {
@@ -34,7 +36,16 @@ const Navigation = ({ embedded = false }) => {
         </Link>
         <nav className={`links ${isMenuOpen ? 'open' : ''}`}>
           <Link to="/" onClick={closeMenu}>Home</Link>
-          <a href="#about" onClick={(e) => { e.preventDefault(); scrollToSection('about'); }}>About</a>
+          <Link to="/about" onClick={closeMenu}>About</Link>
+          <div className="dropdown" onMouseEnter={() => setIsServicesOpen(true)} onMouseLeave={() => setIsServicesOpen(false)}>
+            <span className="dropdown-toggle">Services</span>
+            <div className={`dropdown-menu ${isServicesOpen ? 'show' : ''}`}>
+              <Link to="/weddings" onClick={closeMenu}>Weddings</Link>
+              <Link to="/corporate" onClick={closeMenu}>Corporate events</Link>
+              <Link to="/portraits" onClick={closeMenu}>Professional headshots</Link>
+              <Link to="/music-production" onClick={closeMenu}>Music production</Link>
+            </div>
+          </div>
           <Link to="/contact" onClick={closeMenu}>Contact</Link>
         </nav>
         <button 

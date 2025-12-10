@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Navigation from '../components/Navigation.jsx';
+import WhatsAppButton from '../components/WhatsAppButton.jsx';
 import Footer from '../components/Footer.jsx';
 
 const Contact = () => {
@@ -104,6 +105,7 @@ const Contact = () => {
         </div>
       </section>
 
+      <WhatsAppButton />
       <Footer />
     </div>
   );
