@@ -33,6 +33,7 @@ const Footer = () => {
       </div>
       
       <p>&copy; 2025 Bunie Creatives. Great memories are worth keeping.</p>
+      
       <div className="social-icons">
         <a href="mailto:buniecompany@gmail.com" title="Email">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
