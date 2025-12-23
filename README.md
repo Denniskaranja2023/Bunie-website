@@ -1,14 +1,15 @@
 # Bunie Creatives - Photography Portfolio
 
-A modern React-based photography portfolio website for Bunie Creatives, showcasing professional photography services including weddings, corporate events, headshots, and live recordings.
+A modern full-stack photography portfolio website for Bunie Creatives, featuring a React frontend and Node.js backend with email contact form functionality.
 
 ## Features
 
 - **Responsive Design**: Optimized for all devices
 - **Interactive Gallery**: Lightbox functionality with keyboard navigation
 - **Smooth Scrolling**: Enhanced user experience with parallax effects
-- **Contact Form**: Professional contact form for client inquiries
+- **Contact Form**: Professional contact form with email backend
 - **Modern React Architecture**: Component-based structure with hooks
+- **Node.js Backend**: Express API for contact form submissions
 
 ## Services Showcased
 
@@ -28,17 +29,30 @@ A modern React-based photography portfolio website for Bunie Creatives, showcasi
 ### Installation
 
 1. Clone the repository
-2. Install dependencies:
+2. Install all dependencies:
    ```bash
-   npm install
+   npm run install-all
    ```
 
-3. Start the development server:
+3. Configure environment variables:
+   - Navigate to `Backend/.env`
+   - Add your Gmail app password to `EMAIL_PASS`
+
+4. Start both frontend and backend:
    ```bash
    npm run dev
    ```
 
-4. Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
+   Or run them separately:
+   ```bash
+   # Backend (port 5000)
+   npm run backend
+   
+   # Frontend (port 5173)
+   npm run frontend
+   ```
+
+5. Open [http://localhost:5173](http://localhost:5173) to view the frontend.
 
 ### Building for Production
 
@@ -46,35 +60,44 @@ A modern React-based photography portfolio website for Bunie Creatives, showcasi
 npm run build
 ```
 
-This builds the app for production to the `build` folder.
-
 ## Project Structure
 
 ```
-src/
-├── components/          # Reusable React components
-│   ├── Navigation.js    # Navigation header
-│   ├── Hero.js         # Hero sections with parallax
-│   ├── Gallery.js      # Photo gallery component
-│   ├── Lightbox.js     # Image lightbox viewer
-│   └── Footer.js       # Footer with social links
-├── pages/              # Page components
-│   ├── Home.js         # Main portfolio page
-│   └── Contact.js      # Contact form page
-├── data/               # Static data
-│   └── galleryData.js  # Image imports and metadata
-├── assets/             # Static assets
-│   └── photos/         # Photography portfolio images
-└── styles/             # CSS styles
-    └── index.css       # Main stylesheet
+Frontend/
+├── src/
+│   ├── components/          # Reusable React components
+│   ├── pages/              # Page components
+│   ├── data/               # Static data
+│   ├── assets/             # Static assets
+│   └── styles/             # CSS styles
+├── public/                 # Public assets
+└── package.json           # Frontend dependencies
+
+Backend/
+├── server.js              # Express server with API endpoints
+├── package.json           # Backend dependencies
+└── .env                   # Environment variables
 ```
+
+## API Endpoints
+
+- `POST /api/contact` - Submit contact form
+  - Body: `{ name, email, message, service }`
 
 ## Technologies Used
 
+### Frontend
 - **React 18**: Modern React with hooks
 - **React Router**: Client-side routing
 - **CSS3**: Custom styling with responsive design
 - **JavaScript ES6+**: Modern JavaScript features
+
+### Backend
+- **Node.js**: Runtime environment
+- **Express**: Web framework
+- **Nodemailer**: Email sending
+- **CORS**: Cross-origin resource sharing
+- **dotenv**: Environment variable management
 
 ## Contact
 
