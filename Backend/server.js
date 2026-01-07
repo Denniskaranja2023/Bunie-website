@@ -9,7 +9,9 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(cors({
-  origin: ['http://localhost:5173', 'https://bunie-react-website.vercel.app/']
+  origin: ['http://localhost:5173', 'https://bunie-react-website.vercel.app'],
+  methods: ['GET', 'POST'],
+  allowedHeaders: ['Content-Type']
 }));
 app.use(express.json());
 
