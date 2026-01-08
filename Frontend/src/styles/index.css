@@ -168,6 +168,8 @@ body {
 @media (max-width: 768px) {
   .hero {
     margin: 0;
+    height: 60vh;
+    background-position: center center;
   }
   
   .hero#home {
@@ -832,7 +834,7 @@ footer p {
 
 /* CONTACT PAGE */
 .contact-hero {
-  height: 25vh;
+  height: 10vh;
   background: #f8f9fa;
   display: flex;
   align-items: center;
