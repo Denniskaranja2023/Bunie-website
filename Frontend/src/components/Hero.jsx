@@ -23,7 +23,7 @@ const Hero = ({ id, backgroundImage, children, height = '90vh' }) => {
   }, [id]);
 
   const heroStyle = {
-    backgroundImage: `url(${backgroundImage})`,
+    backgroundImage: window.innerWidth <= 400 ? 'none' : `url(${backgroundImage})`,
     height: height
   };
 

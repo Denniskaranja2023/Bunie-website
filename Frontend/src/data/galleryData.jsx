@@ -2,7 +2,7 @@
 
 export const heroImages = {
   main: '/photos/LOVE-WEDDINGS.webp',
-  weddings: '/photos/Kiarie-12.webp',
+  weddings: '/photos/wedding%20shoes%202.webp',
   corporate: '/photos/mpoc-corporate-event-4.avif',
   portraits: '/photos/CO-SP-personal-portrait-5.webp',
   live: '/photos/Sherman-live-recording-5.webp',
@@ -27,7 +27,9 @@ export const weddingImages = [
   { src: '/photos/Elsie & Praise (shoot) 065.webp', alt: 'Wedding 15', caption: 'Love Birds' },
   { src: '/photos/Elsie & Praise (shoot) 072.webp', alt: 'Wedding 16', caption: 'Love Birds' },
   { src: '/photos/hands-held-weddings.webp', alt: 'Wedding 17', caption: 'Her hand in his' },
-  { src: '/photos/LOVE-WEDDINGS.webp', alt: 'Wedding 18', caption: 'Forever love' }
+  { src: '/photos/LOVE-WEDDINGS.webp', alt: 'Wedding 18', caption: 'Forever love' },
+  { src: '/photos/Susan%20&%20Bismark%20008.webp', alt: 'Wedding 19', caption: 'The wedding dress' },
+  { src: '/photos/Susan%20&%20Bismark%20034.webp', alt: 'Wedding 20', caption: 'Hail the bride' }
 ];
 
 export const corporateImages = [

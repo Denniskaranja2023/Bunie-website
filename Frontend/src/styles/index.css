@@ -180,6 +180,24 @@ body {
   }
 }
 
+@media (max-width: 400px) {
+  .hero#weddings-hero {
+    background-image: url('/photos/Kiarie-12-resize.webp') !important;
+  }
+  
+  .hero#corporate-hero {
+    background-image: url('/photos/mpoc-corporate-event-4-resize.avif') !important;
+  }
+  
+  .hero#portraits-hero {
+    background-image: url('/photos/CO-SP-personal-portrait-5-resize.webp') !important;
+  }
+  
+  .hero#live-hero {
+    background-image: url('/photos/Sherman-live-recording-5-resize.webp') !important;
+  }
+}
+
 .hero__overlay {
   position: absolute; 
   inset: 0;
