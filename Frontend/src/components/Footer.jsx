@@ -33,6 +33,9 @@ const Footer = () => {
       </div>
       
       <p>&copy; 2025 Bunie Creatives. Great memories are worth keeping.</p>
+      <p style={{ fontSize: '12px', marginTop: '10px', color: '#999' }}>
+        Developed by <a href="https://www.denniswanyeki.dev" target="_blank" rel="noopener noreferrer" style={{ color: '#F15A24', textDecoration: 'none' }}>Karden Technologies</a>
+      </p>
       
       <div className="social-icons">
         <a href="mailto:buniecompany@gmail.com" title="Email">
