@@ -28,6 +28,32 @@ const Home = () => {
         <HeroButton to="/music-production">View Music Production</HeroButton>
       </Hero>
       
+      <div style={{ textAlign: 'center', padding: '80px 20px', background: '#f8f9fa' }}>
+        <h2 style={{ fontSize: '36px', marginBottom: '20px', color: '#111827', fontWeight: '300' }}>Explore More</h2>
+        <p style={{ fontSize: '18px', color: '#6b7280', marginBottom: '30px', maxWidth: '600px', margin: '0 auto 30px' }}>Discover our complete collection of photography work across all categories</p>
+        <a 
+          href="https://bunie-creative-studio.client-gallery.com/" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          style={{
+            display: 'inline-block',
+            padding: '15px 40px',
+            background: '#F15A24',
+            color: '#fff',
+            textDecoration: 'none',
+            fontWeight: '600',
+            fontSize: '16px',
+            letterSpacing: '1px',
+            textTransform: 'uppercase',
+            borderRadius: '50px',
+            transition: 'all 0.3s ease',
+            boxShadow: '0 4px 15px rgba(241, 90, 36, 0.3)'
+          }}
+        >
+          View other categories
+        </a>
+      </div>
+      
       <ScrollIndicator />
       <WhatsAppButton />
       <Footer />
