@@ -12,7 +12,7 @@ const Home = () => {
     <div>
       <HeroSection />
       
-      <Hero id="weddings-hero" backgroundImage={heroImages.weddings} height="100vh">
+      <Hero id="weddings-hero" backgroundImage={heroImages.weddings} >
         <HeroButton to="/weddings">View Weddings</HeroButton>
       </Hero>
       
@@ -20,11 +20,11 @@ const Home = () => {
         <HeroButton to="/corporate">View Corporate Events</HeroButton>
       </Hero>
       
-      <Hero id="portraits-hero" backgroundImage={heroImages.portraits} height="100vh">
+      <Hero id="portraits-hero" backgroundImage={heroImages.portraits} >
         <HeroButton to="/portraits">View Professional Headshots</HeroButton>
       </Hero>
       
-      <Hero id="live-hero" backgroundImage={heroImages.live} height="100vh">
+      <Hero id="live-hero" backgroundImage={heroImages.live}>
         <HeroButton to="/music-production">View Music Production</HeroButton>
       </Hero>
       
