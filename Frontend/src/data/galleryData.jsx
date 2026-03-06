@@ -1,7 +1,7 @@
 // Use public paths for images
 
 export const heroImages = {
-  main: '/photos/LOVE-WEDDINGS.webp',
+  main: '/photos/LOVE-WEDDINGS-resize.webp',
   weddings: '/photos/wedding%20shoes%202.webp',
   corporate: '/photos/mpoc-corporate-event-4.avif',
   portraits: '/photos/CO-SP-personal-portrait-5.webp',
