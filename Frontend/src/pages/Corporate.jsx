@@ -11,7 +11,7 @@ const Corporate = () => {
   return (
     <div>
       <Navigation />
-      <Hero id="corporate-hero" backgroundImage={heroImages.corporate}>
+      <Hero backgroundImage={heroImages.corporate} height='70vh'>
         <div className="hero-content">
           <h1 className="hero-title">Corporate Events</h1>
           <p className="hero-description">Professional event photography that captures the essence of your corporate gatherings. From conferences to team building events, we document your business milestones with precision.</p>

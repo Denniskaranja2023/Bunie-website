@@ -11,7 +11,7 @@ const Portraits = () => {
   return (
     <div>
       <Navigation />
-      <Hero id="portraits-hero" backgroundImage={heroImages.portraits} height="100vh">
+      <Hero backgroundImage={heroImages.portraits} height="70vh">
         <div className="hero-content">
           <h1 className="hero-title">Professional Headshots</h1>
           <p className="hero-description">Striking professional portraits that showcase your personality and professionalism. Perfect for LinkedIn profiles, corporate websites, and personal branding.</p>

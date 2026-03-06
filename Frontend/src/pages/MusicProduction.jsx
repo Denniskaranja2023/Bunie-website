@@ -11,7 +11,7 @@ const MusicProduction = () => {
   return (
     <div>
       <Navigation />
-      <Hero id="live-hero" backgroundImage={heroImages.live} height="100vh">
+      <Hero backgroundImage={heroImages.live} height="70vh">
         <div className="hero-content">
           <h1 className="hero-title">Music Production</h1>
           <p className="hero-description">Dynamic photography and videography for live recordings and music events. We capture the energy, passion, and artistry of musical performances with creative flair.</p>

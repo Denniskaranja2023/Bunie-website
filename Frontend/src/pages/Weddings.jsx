@@ -11,7 +11,7 @@ const Weddings = () => {
   return (
     <div>
       <Navigation />
-      <Hero id="weddings-hero" backgroundImage={heroImages.weddings} height="100vh">
+      <Hero backgroundImage={heroImages.weddings} height="70vh">
         <div className="hero-content">
           <h1 className="hero-title">Wedding Photography</h1>
           <p className="hero-description">Capturing your most precious moments with elegance and artistry. From intimate ceremonies to grand celebrations, we preserve the magic of your special day forever.</p>

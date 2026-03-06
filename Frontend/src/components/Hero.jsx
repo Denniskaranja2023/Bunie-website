@@ -25,9 +25,12 @@ const Hero = ({ id, backgroundImage, children, height = '90vh' }) => {
   const heroStyle = {
     backgroundImage: window.innerWidth <= 400 ? 'none' : `url(${backgroundImage})`
   };
+  
+  const isHomePage = ['home', 'weddings-hero', 'corporate-hero', 'portraits-hero', 'live-hero'].includes(id);
+  const heroClass = isHomePage ? 'hero' : 'hero hero-page';
 
   return (
-    <section id={id} className="hero" style={heroStyle}>
+    <section id={id} className={heroClass} style={heroStyle}>
       <div className="hero__overlay"></div>
       {children}
     </section>
